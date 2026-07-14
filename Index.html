@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Chat</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER START -->
+
+<header class="header">
+
+<div class="logo">
+<h2>My Chat</h2>
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search users...">
+
+</div>
+
+<div class="profile-menu">
+
+<button id="logoutBtn">
+Logout
+</button>
+
+</div>
+
+</header>
+
+<!-- HEADER END -->
+
+<!-- NAVIGATION START -->
+
+<nav class="navbar">
+
+<a href="#">🏠 Home</a>
+
+<a href="#">👥 Friends</a>
+
+<a href="#">💬 Messages</a>
+
+<a href="#">👤 Profile</a>
+
+</nav>
+
+<!-- NAVIGATION END -->
+
+<!-- MAIN START -->
+
+<main class="main-container">
+
+<!-- LEFT SIDEBAR -->
+
+<div class="left-sidebar">
+
+<h3>Menu</h3>
+
+<ul>
+
+<li>🏠 Home</li>
+
+<li>👥 Friends</li>
+
+<li>💬 Messages</li>
+
+<li>🔔 Notifications</li>
+
+<li>⚙ Settings</li>
+
+</ul>
+
+</div>
+
+<!-- CENTER CONTENT START -->
+
+<div class="center-content">
+  <!-- CREATE POST -->
+
+<div class="create-post">
+
+<h3>Create Post</h3>
+
+<textarea
+id="postText"
+placeholder="What's on your mind?"
+rows="5">
+</textarea>
+
+<br>
+
+<button id="postBtn">
+Post
+</button>
+
+</div>
+
+<!-- NEWS FEED -->
+
+<div class="news-feed">
+
+<h3>Recent Posts</h3>
+
+<div class="post-card">
+
+<div class="post-header">
+
+<h4>Welcome</h4>
+
+<small>Admin</small>
+
+</div>
+
+<div class="post-body">
+
+<p>
+Welcome to My Chat Social Network.
+Your account is ready.
+Start posting and chatting with your friends.
+</p>
+
+</div>
+
+</div>
+
+<div id="postsContainer">
+
+<!-- Firebase Posts Will Show Here -->
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CENTER CONTENT END -->
+
+<!-- RIGHT SIDEBAR START -->
+
+<div class="right-sidebar">
+
+<h3>Your Profile</h3>
+
+<div class="profile-card">
+
+<p><strong>Name:</strong></p>
+
+<p id="userName">
+Loading...
+</p>
+
+<hr>
+
+<p><strong>Email:</strong></p>
+
+<p id="userEmail">
+Loading...
+</p>
+
+</div>
+
+<hr>
+
+<h3>Quick Menu</h3>
+
+<ul>
+
+<li>👤 My Profile</li>
+
+<li>👥 Friends</li>
+
+<li>💬 Messages</li>
+
+<li>🔔 Notifications</li>
+
+<li>⚙ Settings</li>
+
+</ul>
+</div>
+
+<!-- RIGHT SIDEBAR END -->
+
+</main>
+
+<footer class="footer">
+
+<p>
+© 2026 My Chat. All Rights Reserved.
+</p>
+
+</footer>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>

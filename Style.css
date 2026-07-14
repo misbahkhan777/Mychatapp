@@ -1,0 +1,463 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f0f2f5;
+color:#222;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+
+width:100%;
+height:70px;
+
+background:#1877f2;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 20px;
+
+position:sticky;
+top:0;
+
+z-index:1000;
+
+}
+
+.logo h2{
+
+color:#fff;
+font-size:28px;
+
+}
+
+.search-box input{
+
+width:260px;
+
+padding:10px 15px;
+
+border:none;
+outline:none;
+
+border-radius:25px;
+
+font-size:15px;
+
+}
+
+.profile-menu button{
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:8px;
+
+background:#fff;
+
+color:#1877f2;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+background:#ffffff;
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+padding:15px;
+
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+}
+
+.navbar a{
+
+text-decoration:none;
+
+font-size:17px;
+
+font-weight:bold;
+
+color:#444;
+
+}
+
+.navbar a:hover{
+
+color:#1877f2;
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+.main-container{
+
+width:100%;
+
+display:grid;
+
+grid-template-columns:250px 1fr 250px;
+
+gap:20px;
+
+padding:20px;
+
+}
+/* ===========================
+   LEFT SIDEBAR
+=========================== */
+
+.left-sidebar,
+.right-sidebar{
+
+background:#ffffff;
+
+padding:20px;
+
+border-radius:12px;
+
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+height:fit-content;
+
+}
+
+.left-sidebar h3,
+.right-sidebar h3{
+
+margin-bottom:15px;
+
+color:#1877f2;
+
+}
+
+.left-sidebar ul,
+.right-sidebar ul{
+
+list-style:none;
+
+}
+
+.left-sidebar li,
+.right-sidebar li{
+
+padding:12px 0;
+
+border-bottom:1px solid #eee;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.left-sidebar li:hover,
+.right-sidebar li:hover{
+
+padding-left:8px;
+
+color:#1877f2;
+
+}
+
+/* ===========================
+   CENTER CONTENT
+=========================== */
+
+.center-content{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+/* ===========================
+   CREATE POST
+=========================== */
+
+.create-post{
+
+background:#ffffff;
+
+padding:20px;
+
+border-radius:12px;
+
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+.create-post h3{
+
+margin-bottom:15px;
+
+}
+
+.create-post textarea{
+
+width:100%;
+
+padding:15px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+resize:none;
+
+outline:none;
+
+font-size:16px;
+
+}
+
+.create-post button{
+
+margin-top:15px;
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:8px;
+
+background:#1877f2;
+
+color:#fff;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+/* ===========================
+   NEWS FEED
+=========================== */
+
+.news-feed{
+
+background:#ffffff;
+
+padding:20px;
+
+border-radius:12px;
+
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+.post-card{
+
+padding:15px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+margin-top:15px;
+
+}
+
+.post-header{
+
+margin-bottom:10px;
+
+}
+
+.post-header h4{
+
+color:#1877f2;
+
+}
+
+.post-body p{
+
+line-height:1.7;
+
+}
+
+/* ===========================
+   PROFILE CARD
+=========================== */
+
+.profile-card{
+
+line-height:2;
+
+}
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+margin-top:20px;
+
+padding:20px;
+
+text-align:center;
+
+background:#ffffff;
+
+box-shadow:0 -2px 10px rgba(0,0,0,.08);
+
+font-size:15px;
+
+color:#666;
+
+}
+
+/* ===========================
+   BUTTON HOVER
+=========================== */
+
+button{
+
+transition:.3s;
+
+}
+
+button:hover{
+
+opacity:.9;
+
+transform:scale(1.03);
+
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width:900px){
+
+.main-container{
+
+grid-template-columns:1fr;
+
+}
+
+.left-sidebar{
+
+display:none;
+
+}
+
+.right-sidebar{
+
+display:none;
+
+}
+
+.search-box input{
+
+width:160px;
+
+}
+
+.header{
+
+padding:0 10px;
+
+}
+
+.logo h2{
+
+font-size:22px;
+
+}
+
+.navbar{
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.navbar a{
+
+font-size:15px;
+
+}
+
+.create-post,
+.news-feed{
+
+padding:15px;
+
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width:500px){
+
+.header{
+
+flex-direction:column;
+
+height:auto;
+
+padding:15px;
+
+gap:10px;
+
+}
+
+.search-box input{
+
+width:100%;
+
+}
+
+.profile-menu{
+
+width:100%;
+
+}
+
+.profile-menu button{
+
+width:100%;
+
+}
+
+}
