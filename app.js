@@ -134,11 +134,6 @@ if (logoutBtn) {
 }
 /* ---------------- HOME USER PROFILE ---------------- */
 
-const logoutBtn = document.getElementById("logoutBtn");
-
-const userName = document.getElementById("userName");
-const userEmail = document.getElementById("userEmail");
-
 
 onAuthStateChanged(auth, async (user) => {
 
@@ -178,21 +173,6 @@ onAuthStateChanged(auth, async (user) => {
 });
 
 
-/* ---------------- LOGOUT ---------------- */
-
-if(logoutBtn){
-
-logoutBtn.addEventListener("click", async()=>{
-
-    await signOut(auth);
-
-    alert("Logout Successful");
-
-    window.location.href="login.html";
-
-});
-
-}
 /* ===========================
    CREATE POST
 =========================== */
