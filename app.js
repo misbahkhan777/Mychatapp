@@ -15,6 +15,7 @@ import {
   getDocs,
   query,
   orderBy
+  serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
 /* ---------------- SIGNUP ---------------- */
@@ -44,7 +45,7 @@ if (signupBtn) {
         uid: user.uid,
         name: name,
         email: email,
-        createdAt: new Date()
+        createdAt:serverTimestamp()
       });
 
       alert("Account Created Successfully");
