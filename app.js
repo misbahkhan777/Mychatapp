@@ -1,5 +1,5 @@
 import { auth, db } from "./firebase-config.js";
-alert("App.js loaded");
+
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -14,8 +14,8 @@ import {
   addDoc,
   getDocs,
   query,
-  orderBy
-  serverTimestamp
+  orderBy,
+ serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
 /* ---------------- SIGNUP ---------------- */
@@ -219,7 +219,7 @@ text:text,
 
 email:user.email,
 
-createdAt:new Date()
+createdAt:serverTimestamp()
 
 });
 
